@@ -1,0 +1,11 @@
+<beans xmlns="https://jakarta.ee/xml/ns/jakartaee"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd"
+       version="3.0" bean-discovery-mode="annotated">
+
+    <interceptors>
+        <class>org.varelacasas.interceptors.TransactionalJpaInterceptor </class>
+        <!--  <class> org.varelacasas.interceptors.TransactionalMongoInterceptor</class> -->
+          <class>org.varelacasas.interceptors.LoggingInterceptor</class>
+      </interceptors>
+  </beans>
